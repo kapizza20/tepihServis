@@ -1,0 +1,930 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/poz.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Sanista Swashed", "safir";
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.rezervisi {
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #383434de;
+    position: fixed;
+    top: 140px;
+    height: 100px;
+    width: 200px;
+    border-radius: 0 20% 20% 10%;
+    right: -100px;
+    transition: 1s;
+
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.povuci {
+    padding-right: 1px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #d40404;
+    width: 110%;
+    height: 20px;
+    position: relative;
+    border-radius: 0 0 30% 0;
+    left: 0px;
+}
+
+.rezervisi:hover {
+    right: 0;
+}
+
+.rezervisi>a {
+    text-decoration: none;
+}
+
+.rezervisi>a>div {
+    padding: 5px;
+    text-align: center;
+    height: 30px;
+    margin: 15px;
+    color: white;
+    background-color: #f53f3f;
+    border-radius: 30%;
+}
+
+.kolona {
+    margin: auto;
+    height: 100%;
+    width: 70%;
+    background-color: #03010170;
+    padding: 10px;
+}
+
+.page {
+    height: 100vh;
+    margin: 0 2% 1% 2%;
+    border-top: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: 2px;
+    border-top: none;
+    border-left: 2px;
+    box-shadow: 3px 3px 10px 3px #000000;
+}
+
+@keyframes promenapocetnepozadine {
+    0% {
+        background-image: url("../Slikepocetna/mar3.jpg");
+        background-position: 1% 1%;
+    }
+
+    30% {
+        background-image: url("../Slikepocetna/mar2.jpg");
+        background-position: 1% 30%;
+    }
+
+    66% {
+        background-image: url("../Slikepocetna/mar1.jpg");
+        background-position: 20% 40%;
+
+    }
+
+    100% {
+        background-image: url("../Slikepocetna/mar4.jpg");
+        background-position: 1% 60%;
+    }
+}
+
+#Pocetna {
+    margin-top: 0px;
+    /*background-image: url("../img/zuti.webp");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 100%;
+    animation-name: promenapocetnepozadine;
+    animation-timing-function: cubic-bezier(0.15, 0.16, 0.25, 0.94);
+    animation-duration: 30s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#Usluge {
+    margin-top: 0px;
+    background-image: url("../img/pocetna.jpg");
+    background-color: #24000220;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: fit-content;
+}
+
+#Usluge>.kolona {
+    padding: 10px;
+}
+
+/*#cenovnik{
+
+}
+
+#cenovnik > .kolona{
+
+}*/
+
+#lokacija {
+    margin-top: 0px;
+    background-image: url("../img/crveni.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.zaglavlje {
+    margin: 0px;
+    height: 100px;
+    background-image: url("../img/zuti.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    background-color: #f5deb370;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+
+.meni {
+    align-self: flex-end;
+    height: 40%;
+    font-size: 15px;
+    font-weight: bolder;
+    /*  background: linear-gradient(135deg,  #7c740170 70%, #30025c70 50%);*/
+    background-color: #f5deb390;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.meni a {
+    padding: 9px;
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    font-size: large;
+    color: rgb(19, 6, 6);
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.meni a:hover,
+.meni a.active {
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: white;
+    font-size: 20px;
+    background-color: #be930391;
+}
+
+.uvod {
+    font-family: "Ubuntu";
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #240002;
+    word-spacing: 2px;
+}
+
+.uvod>p {
+    margin: 0px;
+    transition: 1s;
+}
+
+.uvod p:hover {
+    font-size: 70px;
+    color: #d40404;
+    text-shadow: 1px 1px 1px black;
+}
+
+.brza-ponuda {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #a7520330;
+    color: white;
+    text-shadow: 1px 1px 2px #240002;
+    margin-top: 5%;
+    width: 80%;
+    height: fit-content;
+
+}
+
+.brza-ponuda h2 {
+    font-size: 40px;
+    margin: 0px;
+
+}
+
+.brza-ponuda li {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 2%;
+    transition: 1s;
+
+}
+
+.brza-ponuda li:hover {
+    font-size: 35px;
+    color: #d40404;
+    text-shadow: 2px 2px 2px black;
+}
+
+.usluge-mas-pranje {
+    display: flex;
+    width: 95%;
+    padding: 10px;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #252222fD;
+    text-shadow: 1px 1px 1px white;
+}
+
+.menizauslugepranja {
+    height: 40px;
+    width: 400px;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.menizauslugepranja label {
+    transition: 1s;
+    margin-left: 5px;
+    padding: 5px;
+    text-align: left;
+    background-color: #be930391;
+    display: block;
+    flex-grow: 1;
+    font-size: 22px;
+}
+
+.menizauslugepranja label:hover {
+    transform: scale(1.1);
+}
+
+#Pocetna .kolona {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.usluge-text {
+    transition: 1s;
+    background-color: #a7520330;
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Sanista Swashed";
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.usluge-img {
+    display: grid;
+
+    transition: 1s;
+    margin-left: 0px;
+    width: 100%;
+    height: fit-content;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "slika11 slika22 "
+        "slika33 slika44 ";
+}
+
+.griditemuslugeimg1 {
+    grid-area: slika11;
+    width: 100%;
+    height: 200px;
+}
+
+.griditemuslugeimg2 {
+    grid-area: slika22;
+    width: 100%;
+    height: 200px;
+}
+
+.griditemuslugeimg3 {
+    grid-area: slika33;
+    width: 100%;
+    height: 200px;
+}
+
+.griditemuslugeimg4 {
+    grid-area: slika44;
+    width: 100%;
+    height: 200px;
+}
+
+.usluge-img img {
+    margin-top: 10px;
+}
+
+
+/*
+.usluge-kolona {
+    flex: 33%;
+    padding-left: 30px;
+    position: relative;
+}
+*/
+
+.usluge-row {
+    transition: 1s;
+    opacity: 0.8;
+}
+
+.usluge-row:hover {
+    transform: scale(1.05);
+    position: relative;
+    opacity: 1;
+    z-index: 3;
+}
+
+.usluge-mas-faze {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.faza {
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #a75203ea;
+    position: relative;
+    padding-top: 10px;
+}
+
+.mas-faze {
+    margin-top: 30px;
+}
+
+.mas-faze h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.faza img {
+    margin-top: 20px;
+}
+
+
+.broj {
+    line-height: 50px;
+    font-size: 30px;
+    font-family: "Clement Numbers";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #d40404d0;
+    position: absolute;
+    left: 70px;
+    top: -25px;
+}
+
+#lokacija h1 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    text-shadow: 1px 2px 2px black;
+    text-decoration: underline;
+
+}
+
+.kontk-area {
+    display: grid;
+    grid-template:
+        "telefoni mapa"
+        ". mapa";
+    grid-template-columns: 300px 1fr;
+    /* odredjivanje velicine kolona*/
+    padding-right: 0px;
+
+}
+
+.tel {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 20px;
+    grid-area: telefoni;
+}
+
+.email {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 20px;
+    grid-area: email;
+
+}
+
+.mapa {
+    grid-area: mapa;
+    margin-left: 50px;
+}
+
+.meni div {
+    display: block;
+    flex-grow: 1;
+}
+
+#linkzakontakt {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#Pocetna {
+    height: 100wh;
+}
+
+#Cenovnik {
+    height: fit-content;
+}
+
+#Cenovnik>.kolona>table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+#Cenovnik>.kolona>table>thead {
+    font-size: 40px;
+}
+
+#Cenovnik>.kolona>table>body {
+    font-size: 35px;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+table td {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+table th {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+#Cenovnik>.kolona>p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100px;
+    /* The width is the width of the web page */
+    background-color: grey;
+}
+
+
+
+.blokic {
+    display: block;
+}
+
+.padding {
+    padding: 10px;
+}
+
+@media only screen and (min-width:501px) {
+    @keyframes fade_in_show {
+        0% {
+            opacity: 0;
+            transform: scale(0)
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1)
+        }
+    }
+
+    .nevidljivo {
+        display: none;
+    }
+
+    .padajucimeni {
+        position: absolute;
+        right: 30px;
+        width: 220px;
+        margin: 0px;
+    }
+
+    .padajucimeni a {
+        /* opacity:0;
+        transition:0.5s;*/
+        border: 2px solid #000000aa;
+        border-top: none;
+        display: none;
+        animation: fade_in_show 0.5s;
+    }
+
+    .divzapadmeni:hover div a {
+        display: block;
+        /*opacity: 1;
+        animation: fade_in_show 0.5s;*/
+        animation: fadeIn 0.5s;
+        color: white;
+        background-color: #be930391;
+        animation: fade_in_show 0.5s;
+    }
+
+    .divzapadmeni>a {
+        line-height: 40px;
+    }
+
+
+
+    #skloniovonamaxpreko800 {
+        display: none;
+    }
+}
+
+.mapa{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: 70%
+}
+
+
+@media only screen and (max-width:500px) {
+
+
+    /*
+   RESET CSSa all: initial;
+            all: unset;
+   */
+
+    .kolona {
+        margin: auto;
+        height: 100%;
+        width: 395px;
+        background-color: #03010170;
+    }
+
+    .meni {
+        padding: 0px;
+        align-self: flex-end;
+        height: 100%;
+        font-size: 15px;
+        font-weight: bolder;
+        /*  background: linear-gradient(135deg,  #7c740170 70%, #30025c70 50%);*/
+        background-color: #f5deb390;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .meni a {
+        padding: 9px 2px;
+        display: block;
+        text-align: center;
+        font-size: large;
+        color: rgb(19, 6, 6);
+        text-decoration: none;
+        transition: 500ms;
+
+    }
+
+    .meni>a:first-child {
+        padding-left: 0px;
+    }
+
+    .meni>a:last-of-type {
+        padding-right: 15px;
+    }
+
+    .meni a:hover,
+    .meni a.active {
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: white;
+        font-size: 20px;
+        background-color: #be930391;
+    }
+
+    .zaglavlje {
+        margin: 0px;
+        height: 60px;
+        background-image: url("../img/zuti.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nav {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .rezervisi,
+    .logo {
+        display: none;
+    }
+
+    .padajucimeni a {
+        display: none;
+    }
+
+    .divzapadmeni>a {
+        display: none;
+    }
+
+    a.elpadamenija {
+        display: none;
+    }
+
+    .brza-ponuda {
+        margin: 0px;
+
+    }
+
+    .uvod {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meni>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px solid #7e6b0090;
+        padding: 0px 5px;
+    }
+
+    .centrirano {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nevidljivo {
+        display: none;
+    }
+
+    .brza-ponuda {
+        margin-top: 30%;
+        padding: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #Pocetna .kolona {
+        width: 95%;
+    }
+
+    .menizauslugepranja {
+        display: none;
+    }
+
+    .usluge-img {
+        display: none;
+    }
+
+    .usluge-mas-pranje {
+        left: 0px;
+        padding: 2px;
+        width: 95%;
+        display: flex;
+    }
+
+    #Usluge {
+        height: fit-content;
+    }
+
+    .vidljivozamin500 {
+        display: block;
+    }
+
+    .usluge-text>img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .stopostowidth {
+        width: 100%;
+    }
+
+    .stopostoheight {
+        height: 100%;
+    }
+
+    .usluge-text {
+        margin: 0px;
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .usluge-text>h3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .usluge-text>p {
+        width: 100%;
+        font-size: medium;
+    }
+
+    #Usluge .kolona {
+        height: 100%;
+        width: 100%;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .slika1 {
+        grid-area: slika1;
+        width: 100%;
+        height: 200px;
+    }
+
+    .slika2 {
+        grid-area: slika2;
+        width: 100%;
+        height: 200px;
+    }
+
+    .gridzaimg500 {
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        width: 90%;
+        column-gap: 10px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "slika1 slika2";
+    }
+
+    @keyframes promenapocetnepozadine {
+        0% {
+            background-image: url("../Slikepocetna/mar4.jpg");
+            background-position: 65% 80%;
+
+        }
+
+        30% {
+            background-image: url("../Slikepocetna/mar2.jpg");
+            background-position: 1% 30%;
+        }
+
+        66% {
+            background-image: url("../Slikepocetna/mar1.jpg");
+            background-position: 20% 40%;
+
+        }
+
+        100% {
+            background-image: url("../Slikepocetna/mar3.jpg");
+            background-position: 40% 1%;
+        }
+    }
+
+    #Cenovnik>.kolona {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .kontk-area {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template:
+            "telefoni"
+            "mapa";
+        width: 80%;
+        /* odredjivanje velicine kolona*/
+        align-content: center;
+
+
+    }
+
+    .tel {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+
+    .mapa{
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #lokacija>.kolona{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .kolona h1 span{
+        display: block;
+        padding: 10px;
+    }
+}

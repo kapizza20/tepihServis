@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.okvir{
+    padding: 10px;
+    margin: 2px;
+    border: solid 2px black;
+    line-height: 24px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+textarea{
+    min-height: 8em;
+    min-width: 100%;
+    padding: 5em;
+    border: solid 1px #999;
+}
+
+input[type="radio"] +label{
+    display: inline-block;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+input[type="radio"]{
+    margin-left: 1.5em;
+    margin-right: 0px;
+}
+input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
