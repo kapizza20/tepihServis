@@ -287,8 +287,8 @@ ul {
 
 h3 {
     font-size: 30px;
-    color: #252222fD;
-    text-shadow: 1px 1px 1px white;
+    color: #f9f6f6fd;
+    text-shadow: 1px 1px 1px black;
 }
 
 .menizauslugepranja {
@@ -324,7 +324,7 @@ h3 {
 
 .usluge-text {
     transition: 1s;
-    background-color: #a7520330;
+    background-color: #7a3c0130;
     text-align: left;
     margin: 0;
     padding: 10px;
