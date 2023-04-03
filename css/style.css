@@ -383,6 +383,11 @@ h3 {
 	0% {
 		transform: scale(0, .025);
 	}
+    
+    10% {
+		transform: scale(0.40, .025);
+	}
+
 	50% {
 		transform: scale(1, .025);
 	}
@@ -390,7 +395,13 @@ h3 {
 
 .square {
     animation-name: wipe-enter;
-    animation-duration: 1s;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+  }
+
+  .square10 {
+    animation-name: wipe-enter;
+    animation-duration: 10s;
     animation-iteration-count:1;
   }
 
