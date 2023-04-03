@@ -401,7 +401,7 @@ h3 {
 
   .square10 {
     animation-name: wipe-enter;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count:1;
   }
 
