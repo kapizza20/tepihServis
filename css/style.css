@@ -20,6 +20,76 @@ body {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
+
+
+ 
+  /*---------- SLIDE ANIMATION --------------*/
+
+  .slider-frame{
+      overflow: hidden;
+      height: 600px;
+      width: 1000px;
+  }
+ 
+  @keyframes slide_animation{
+      0% {left:1000px;}
+      10% {left:1000px;}
+      20% {left:2000px;}
+      30% {left:3000px;}
+      40% {left: 4000px;}
+      50% {left: 5000px;}
+      60% {left: 4000px;}
+      70% {left: 3000px;}
+      80% {left: 2000px;}
+      90% {left: 1000px;}
+      100% {left:1000px;}
+  }
+ 
+  @-webkit-keyframes slide_animation{
+      0% {left:1000px;}
+      10% {left:1000px;}
+      20% {left:2000px;}
+      30% {left:3000px;}
+      40% {left: 4000px;}
+      50% {left: 5000px;}
+      60% {left: 4000px;}
+      70% {left: 3000px;}
+      80% {left: 2000px;}
+      90% {left: 1000px;}
+      100% {left:1000px;}
+  }
+ 
+  .slide-images{
+      width: 5000px;
+      height: 600px;
+      margin: 0 0 0 -5000px;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 60s;
+      animation-duration: 60s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
+ 
+  .img-container{
+      height: 600px;
+      width: 1000px;
+      position: relative;
+      float: left;
+  }
+  .img-container img{
+      height: 600px;
+      width: 1000px;
+      position: relative;
+      float: left;
+  }
+
+
 .rezervisi {
     padding: 10px;
     padding-top: 0px;
@@ -155,7 +225,6 @@ ul {
 
 #lokacija {
     margin-top: 0px;
-    background-image: url("../img/crveni.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -208,7 +277,7 @@ ul {
     flex-grow: 1;
     text-align: center;
     font-size: large;
-    color: rgb(19, 6, 6);
+    color: rgb(243, 238, 238);
     text-decoration: none;
     transition: 500ms;
 }
