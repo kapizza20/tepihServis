@@ -23,16 +23,17 @@ body {
 
 #galerija{
     margin-top: 0px;
-   
+   text-align: center;
     background-color: #24000220;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: fit-content;
 }
- 
-  /*---------- SLIDE ANIMATION --------------*/
 
+
+  /*---------- SLIDE ANIMATION --------------*/
+/* 
   .slider-frame{
       overflow: hidden;
       height: 600px;
@@ -95,9 +96,46 @@ body {
       width: 1000px;
       position: relative;
       float: left;
-  }
+  } */
+.outer-grid {
+    box-sizing: border-box;
+   display: flex;
+   justify-items: center;
+   flex-wrap: wrap;
+   padding: 4px 4px;
+}
+.inner-grid {
+   flex: 25%;
+   max-width: 25%;
+   padding: 4px 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+   transition: 0.5s;
+}
 
+.inner-grid img:hover {
+    transform: scale(1.20);
+    position: relative;
+    opacity: 1;
+    z-index: 3;
+}
 
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+  
 .rezervisi {
     padding: 10px;
     padding-top: 0px;
@@ -155,7 +193,7 @@ ul {
 .kolona {
     margin: auto;
     height: 100%;
-    width: 70%;
+    width: 80%;
     background-color: #03010170;
     padding: 10px;
 }
@@ -397,7 +435,6 @@ h3 {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
 }
 
 .usluge-text {
