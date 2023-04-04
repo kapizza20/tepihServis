@@ -443,7 +443,7 @@ h3 {
 .usluge-text {
     transition: 1s;
     background-color: #7a3c0130;
-    text-align: left;
+    text-align: justify;
     margin: 0;
     padding: 10px;
     font-size: 25px;
@@ -457,15 +457,14 @@ h3 {
 
 .usluge-img {
     display: grid;
-
     transition: 1s;
     margin-left: 0px;
     width: 100%;
     height: fit-content;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 20%;
+    row-gap: 10px;
     padding: 5px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: auto;
     grid-template-areas:
         "slika11 slika22 "
@@ -525,6 +524,7 @@ h3 {
 
 .usluge-img img {
     margin-top: 10px;
+    border: 3px solid #0000009A;
 }
 
 
@@ -538,11 +538,11 @@ h3 {
 
 .usluge-row {
     transition: 1s;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .usluge-row:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     position: relative;
     opacity: 1;
     z-index: 3;
@@ -817,7 +817,7 @@ table th {
         display: block;
         text-align: center;
         font-size: large;
-        color: rgb(19, 6, 6);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         transition: 500ms;
 
