@@ -21,7 +21,15 @@ body {
 }
 
 
-
+#galerija{
+    margin-top: 0px;
+   
+    background-color: #24000220;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: fit-content;
+}
  
   /*---------- SLIDE ANIMATION --------------*/
 
@@ -225,6 +233,7 @@ ul {
 
 #lokacija {
     margin-top: 0px;
+     background-image: url("../imgshow/profio1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
