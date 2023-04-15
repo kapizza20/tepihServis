@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../img/poz.jpg);
+    background-image: linear-gradient(120deg, #202020 0%, #12031d 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,7 +24,7 @@ body {
 #galerija{
     margin-top: 0px;
    text-align: center;
-    background-color: #24000220;
+   background-image: url("../img/poz.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -214,23 +214,23 @@ ul {
 
 @keyframes promenapocetnepozadine {
     0% {
-        background-image: url("../Slikepocetna/mar3.jpg");
+        background-image: url("../Slikepocetna/mar3.webp");
         background-position: 1% 1%;
     }
 
     30% {
-        background-image: url("../Slikepocetna/mar2.jpg");
+        background-image: url("../Slikepocetna/mar2.webp");
         background-position: 1% 30%;
     }
 
     66% {
-        background-image: url("../Slikepocetna/mar1.jpg");
+        background-image: url("../Slikepocetna/mar1.webp");
         background-position: 20% 40%;
 
     }
 
     100% {
-        background-image: url("../Slikepocetna/mar4.jpg");
+        background-image: url("../Slikepocetna/mar4.webp");
         background-position: 1% 60%;
     }
 }
@@ -252,7 +252,7 @@ ul {
 
 #Usluge {
     margin-top: 0px;
-    background-image: url("../img/pocetna.jpg");
+    background-image: url("../img/pocetna.webp");
     background-color: #24000220;
     background-size: cover;
     background-repeat: no-repeat;
@@ -274,7 +274,7 @@ ul {
 
 #lokacija {
     margin-top: 0px;
-     background-image: url("../imgshow/profio1.jpg");
+     background-image: url("../imgshow/profio1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1005,24 +1005,24 @@ table th {
 
     @keyframes promenapocetnepozadine {
         0% {
-            background-image: url("../Slikepocetna/mar4.jpg");
+            background-image: url("../Slikepocetna/mar4.webp");
             background-position: 65% 80%;
 
         }
 
         30% {
-            background-image: url("../Slikepocetna/mar2.jpg");
+            background-image: url("../Slikepocetna/mar2.webp");
             background-position: 1% 30%;
         }
 
         66% {
-            background-image: url("../Slikepocetna/mar1.jpg");
+            background-image: url("../Slikepocetna/mar1.webp");
             background-position: 20% 40%;
 
         }
 
         100% {
-            background-image: url("../Slikepocetna/mar3.jpg");
+            background-image: url("../Slikepocetna/mar3.webp");
             background-position: 40% 1%;
         }
     }
